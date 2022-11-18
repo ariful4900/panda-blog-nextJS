@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 // import styles2 from "../styles/Home2.module.css";
 
@@ -32,10 +31,8 @@ export default function Home() {
         <h1 className={styles.title}>
           <span className={"mySpan"}>Hunting Code</span>
         </h1>
-        <Image className={styles.myImg} src={'/coder.jpg'} width={237} height={157}
-              alt="Coder Image"
-              
-              />
+        <img className={styles.myImg} src={'/coder.jpg'} width={237} height={157}
+              alt="Coder Image"/>
 
         <p className={styles.description}>
           A blog for hunting coder by a hunting coder
