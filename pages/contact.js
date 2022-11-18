@@ -41,10 +41,10 @@ const Contact = () => {
       setDesc(e.target.value);
     }
   };
-  console.log(desc);
+
   return (
     <div className={styles.container}>
-      <h4>This is contact page</h4>
+      <h2>Contact US</h2>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>Contact Form</legend>
@@ -54,14 +54,14 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              className="form-control"
+              className={styles.input}
               id="name"
               name="name"
               aria-describedby="emailHelp"
               value={name}
               onChange={handleChange}
             />
-            <div id="emailHelp" className="form-text">
+            <div id="emailHelp" className={styles.formText}>
               We will never share your email with anyone else.
             </div>
           </div>
@@ -71,14 +71,14 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              className="form-control"
+              className={styles.input}
               id="email"
               name="email"
               value={email}
               onChange={handleChange}
               aria-describedby="emailHelp"
             />
-            <div id="emailHelp" className="form-text">
+            <div id="emailHelp" className={styles.formText}>
               We will never share your email with anyone else.
             </div>
           </div>
@@ -89,7 +89,7 @@ const Contact = () => {
             <input
               type="phone"
               name="phone"
-              className="form-control"
+              className={styles.input}
               id="phone"
               value={phone}
               onChange={handleChange}
@@ -101,8 +101,7 @@ const Contact = () => {
             </label>
             <br />
             <textarea
-              className="form-control"
-              placeholder="Leave a comment here"
+              className={styles.input}
               id="desc"
               onChange={handleChange}
               style={{ height: "100px" }}
@@ -112,7 +111,7 @@ const Contact = () => {
             </textarea>
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className={styles.btn}>
             Submit
           </button>
         </fieldset>

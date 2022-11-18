@@ -17,3 +17,13 @@
   margin: 0;
   padding: 0;
 }
+
+.btn {
+  color: white;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 7px 08px;
+  background-color: #041d3d;
+}
