@@ -1,10 +1,13 @@
+.con {
+  background-color: yellow;
+}
 .container {
   padding: 0 2rem;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -51,7 +54,6 @@
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -126,4 +128,21 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.mainNav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.mainNav ul li {
+  margin: 0 24px;
+  list-style: none;
+  font-weight: 800;
+}
+
+.myImg {
+  border-radius: 10px;
+  margin: 10px;
 }
